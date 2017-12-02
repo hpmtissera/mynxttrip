@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class MyNextTripApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MyNextTripApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MyNextTripApplication.class, args);
+    }
 }
