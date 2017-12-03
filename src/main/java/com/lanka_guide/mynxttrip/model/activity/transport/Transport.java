@@ -1,9 +1,17 @@
 package com.lanka_guide.mynxttrip.model.activity.transport;
 
 import com.lanka_guide.mynxttrip.model.activity.AbstractActivity;
-import com.lanka_guide.mynxttrip.model.place.Place;
 
-public abstract class Transport extends AbstractActivity {
-    Place start;
-    Place end;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Transport extends AbstractActivity {
+    List<TransportActivity> transportActivities;
+
+    public void addTransportSegment(TransportActivity transport) {
+        if (transportActivities == null) {
+            transportActivities = new ArrayList<>();
+        }
+        transportActivities.add(transport);
+    }
 }
